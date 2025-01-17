@@ -10,6 +10,9 @@ import Themetext from './components/context-components/text'
 import ThemeButton from './components/context-components/button'
 import ReducerExample1 from './components/Reducer/Example1'
 import ReducerExample2 from './components/Reducer/Example2'
+import Form from './components/form'
+import Login from './components/Register/login'
+import Register from './components/Register/SignIn'
 
 function App() {
 
@@ -26,7 +29,10 @@ function App() {
         {/* <ThemeButton/>*/}
         {/* <Themetext/> */}
         {/* <ReducerExample1/> */}
-        <ReducerExample2/>
+        {/* <ReducerExample2/> */}
+        {/* <Form/> */}
+        {/* <Login/> */}
+        <Register/>
       </div>
     </>
   )

@@ -26,11 +26,14 @@ function ReactHookFormExamplePage() {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
   function onSubmitForm(formData) {
     console.log(formData);
     console.log(errors);
+
+    reset();
   }
 
   return (

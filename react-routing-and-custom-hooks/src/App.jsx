@@ -6,6 +6,10 @@ import CommentsList from './pages/comments'
 import RecipeDetails from './pages/recipe-details'
 import NotFound from './pages/notfound'
 import ReactHookFormExamplePage from './pages/react-hook-form-examples'
+import Hooks from './pages/hooks/useRef'
+import Memo from './pages/hooks/useMemo'
+import CallbackExample from './pages/hooks/useCallback'
+
 
 
 
@@ -15,7 +19,10 @@ function CustomRoutes(){
     {path:'/comment-list',element: <CommentsList/>},
     {path: '/recipe-details/:id', element: <RecipeDetails/>},
     {path:'*', element:<NotFound/>},
-    {path:'/login', element:<ReactHookFormExamplePage/>}
+    {path:'/login', element:<ReactHookFormExamplePage/>},
+    {path: '/hooks', element: <Hooks/>}, 
+    {path: '/memo', element : <Memo/>},
+    {path: '/callback', element: <CallbackExample/> }
   ]);
 
   return element;

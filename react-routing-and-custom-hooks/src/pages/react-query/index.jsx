@@ -15,9 +15,9 @@ function ReactQuery() {
         mutationFn: addNewProduct,
         onSuccess: ()=>{
             getQueryClient.invalidateQueries(["productList"]);
-        },
+        }
 
-    });
+    })
 
    async function handleAddNewProduct(){
     await handleAddNewProductMutaition(productTitle),
